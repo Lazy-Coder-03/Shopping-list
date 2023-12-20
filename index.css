@@ -1,0 +1,141 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color:#eef0f4;
+    user-select: none;/* important prop*/
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #CD8D7A;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #FFC6AC 
+}
+
+img{
+    width:70%;
+    margin: 2px auto;
+    padding: 0;
+    
+}
+img:hover{
+    animation: hoverAnimation 3s linear infinite, rotateAnimation 3s linear infinite;
+}
+
+input{
+    color: #432000;
+    background-color: #FFF6DC;
+    border:0;
+    padding: 3%;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size:20px;
+    text-align: center;
+    margin: 2% 0;
+}
+
+button{
+    color: #000;
+    background-color: #D27575;/*#F7A4A4;*/
+    cursor:pointer;
+    border:1px;
+    padding: 3%;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size:20px;
+    text-align: center;
+    margin : 2% 0;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #F7A4A4;
+    border-radius: 50px;
+    
+}
+button:disabled{
+    color: #000;
+    background-color: #EEF0E5;
+    cursor: not-allowed;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@keyframes rotateAnimation {
+    0%, 100% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    75% {
+        transform: rotate(-20deg)
+    }
+}
+/*Add these styles to your existing CSS */
+
+
+#popup-message{
+    text-align: center;
+    color: #ac485a;
+}
+
+/* Add these styles to your existing CSS */
+
+/* Add these styles to your existing CSS */
+
+/* #item-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap:2px;
+  /*gap: 2px; /* Adjust the gap as needed 
+} */
+
+/* .item-box {
+  background-color: #DF826C;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  flex: 0 0 calc(33.333% - 20px); 
+  box-sizing: border-box; 
+} */
+
+/* #item-list li {
+  margin:0px; 
+}
+
+.item-box:hover{
+    background-color: #EC8F5E
+} */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+ul li {
+    background-color: #DF826C;
+    padding: 15px;
+    flex-grow: 1;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover{
+    background-color: #EC8F5E
+}
